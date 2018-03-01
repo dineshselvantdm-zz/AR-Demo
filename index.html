@@ -1,0 +1,20 @@
+<!-- include A-Frame obviously -->
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs>    
+    
+    <!-- define a camera which will move according to the marker position -->
+    <a-marker preset='hiro'>
+      <a-image src="https://files.gamebanana.com/img/ico/sprays/ico-rubik.png"></a-image>
+    <a-text width=2 value="Product Name: Rubiks Cube Product ID: 5643526 Price: $10"></a-text>
+    </a-marker>
+    <a-marker preset='kanji'>
+      <a-image src="https://cdn6.aptoide.com/imgs/5/0/6/5069fe60bc49c60193372e9c4af21f53_icon.png"></a-image>
+    <a-text width=2 value="Product Name: Dice Product ID: 5643527 Price: $5"></a-text>
+    </a-marker>
+    
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
