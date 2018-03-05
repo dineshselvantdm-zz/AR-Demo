@@ -34,8 +34,18 @@
 			<a-asset-item id="tv-obj" src="data/models/tv/tv.obj" ></a-asset-item>
 			<a-asset-item id="tv-mtl" src="data/models/tv/tv.mtl"></a-asset-item>
 	  	</a-assets>
+		<a-marker preset='hiro'>
+			<a-entity scale="0.005 0.005 0.005" gltf-model="#myRubiksmodel"></a-entity>
+			<a-entity
+					position="2 1 0"
+					rotation="-90 0 0"
+					geometry="primitive: plane; width: 2; height: auto"
+					material="color: blue"
+					text=" value: Product Name: Rubiks Cube\n Product ID: 5643526\n Price: $10">
+			</a-entity>
+		</a-marker>
 	    <!-- define a camera which will move according to the marker position -->
-	    <a-marker preset='hiro'>
+	    <a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.a">
 			<!--
 				<a-obj-model src="#chair-2-obj" mtl="#chair-2-mtl" scale="0.01 0.01 0.01" rotation="-90 -180 0"></a-obj-model>
 				 <a-obj-model src="#lamp-obj" mtl="#lamp-mtl" scale="0.05 0.05 0.05" ></a-obj-model>
@@ -49,9 +59,27 @@
 				<a-obj-model src="#tv-obj" mtl="#tv-mtl"  scale="0.5 0.5 0.5"  rotation="-90 180 0"></a-obj-model>
 				<a-obj-model src="#tv-obj" mtl="#tv-mtl"  scale="0.5 0.5 0.5"  rotation="-90 180 0"></a-obj-model>
     		-->
-			<a-obj-model src="#sofa-obj" mtl="#sofa-mtl"  scale="3 3 3" rotation="0 -180 0"></a-obj-model>
+			<a-obj-model src="#sofa-2-obj" mtl="#sofa-2-mtl"  scale="3 3 3"  rotation="0 -180 0"></a-obj-model>
 	    </a-marker>
-	    <a-marker preset='kanji'>
+
+
+		<a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.c" size="1">
+			<a-obj-model src="#sofa-obj" mtl="#sofa-mtl"  scale="1.5 1.5 1.5" rotation="0 -180 0"></a-obj-model>
+		</a-marker>
+
+		<a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.d" size="1">
+			<a-obj-model src="#table-obj" mtl="#table-mtl"  scale="2 2 2"></a-obj-model>
+		</a-marker>
+
+		<a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.f" size="1">
+			<a-obj-model src="#table-3-obj" mtl="#table-3-mtl"  scale="3 3 3" ></a-obj-model>
+		</a-marker>
+
+		<a-marker type="pattern" url="https://raw.githubusercontent.com/jeromeetienne/AR.js/master/data/multimarkers/multi-abcdef/patt.g" size="1">
+			<a-obj-model src="#chair-3-obj" mtl="#chair-3-mtl" scale="0.1 0.1 0.1"  ></a-obj-model>
+		</a-marker>
+
+		<a-marker preset='kanji'>
 			<a-entity scale="0.005 0.005 0.005" gltf-model="#myShoeModel"></a-entity>
 			<a-entity 
 				position="2 1 1"
