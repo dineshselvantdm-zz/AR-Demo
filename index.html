@@ -8,17 +8,48 @@
 		    <a-asset-item id="myRubiksmodel" src="rubiks/scene.gltf"></a-asset-item>
 		    <a-asset-item id="mymodel" src="busterDrone.gltf"></a-asset-item>
 		    <a-asset-item id="myShoeModel" src="scene.gltf"></a-asset-item>
+			<a-asset-item id="lamp-obj" src="data/models/lamp/lamp.obj"></a-asset-item>
+			<a-asset-item id="lamp-mtl" src="data/models/lamp/lamp.mtl"></a-asset-item>
+
+			<a-asset-item id="chair-2-obj" src="data/models/chair-2/chair-2.obj"></a-asset-item>
+			<a-asset-item id="chair-2-mtl" src="data/models/chair-2/chair-2.mtl"></a-asset-item>
+			<a-asset-item id="chair-obj" src="data/models/chair/chair.obj" ></a-asset-item>
+			<a-asset-item id="chair-mtl" src="data/models/chair/chair.mtl"></a-asset-item>
+
+			<a-asset-item id="chair-3-obj" src="data/models/chair-3/chair-3.obj" ></a-asset-item>
+			<a-asset-item id="chair-3-mtl" src="data/models/chair-3/chair-3.mtl"></a-asset-item>
+			<a-asset-item id="sofa-obj" src="data/models/sofa/sofa.obj" ></a-asset-item>
+			<a-asset-item id="sofa-mtl" src="data/models/sofa/sofa.mtl"></a-asset-item>
+
+			<a-asset-item id="sofa-2-obj" src="data/models/sofa-2/sofa-2.obj" ></a-asset-item>
+			<a-asset-item id="sofa-2-mtl" src="data/models/sofa-2/sofa-2.mtl"></a-asset-item>
+
+			<a-asset-item id="table-obj" src="data/models/table/table.obj" ></a-asset-item>
+			<a-asset-item id="table-mtl" src="data/models/table/table.mtl"></a-asset-item>
+
+			<a-asset-item id="table-2-obj" src="data/models/table-2/table-2.obj" ></a-asset-item>
+			<a-asset-item id="table-2-mtl" src="data/models/table-2/table-2.mtl"></a-asset-item>
+			<a-asset-item id="table-3-obj" src="data/models/table-3/table-3.obj" ></a-asset-item>
+			<a-asset-item id="table-3-mtl" src="data/models/table-3/table-3.mtl"></a-asset-item>
+			<a-asset-item id="tv-obj" src="data/models/tv/tv.obj" ></a-asset-item>
+			<a-asset-item id="tv-mtl" src="data/models/tv/tv.mtl"></a-asset-item>
 	  	</a-assets>
 	    <!-- define a camera which will move according to the marker position -->
 	    <a-marker preset='hiro'>
-			<a-entity scale="0.005 0.005 0.005" gltf-model="#myRubiksmodel"></a-entity>
-			<a-entity 
-				position="2 1 0" 
-				rotation="-90 0 0"
-				geometry="primitive: plane; width: 2; height: auto"
-				material="color: blue"
-				text=" value: Product Name: Rubiks Cube\n Product ID: 5643526\n Price: $10">
-			</a-entity>
+			<!--
+				<a-obj-model src="#chair-2-obj" mtl="#chair-2-mtl" scale="0.01 0.01 0.01" rotation="-90 -180 0"></a-obj-model>
+				 <a-obj-model src="#lamp-obj" mtl="#lamp-mtl" scale="0.05 0.05 0.05" ></a-obj-model>
+				<a-obj-model src="#chair-obj" mtl="#chair-mtl" scale="0.05 0.05 0.05"  rotation="0 0 0"></a-obj-model>
+				<a-obj-model src="#chair-3-obj" mtl="#chair-3-mtl" scale="0.03 0.03 0.03"  ></a-obj-model>
+				<a-obj-model src="#sofa-obj" mtl="#sofa-mtl"  scale="1.5 1.5 1.5" rotation="0 -180 0"></a-obj-model>
+				<a-obj-model src="#table-obj" mtl="#table-mtl"  scale="0.5 0.5 0.5"></a-obj-model>
+				<a-obj-model src="#table-2-obj" mtl="#table-2-mtl"  scale="2 2 2" ></a-obj-model>
+				<a-obj-model src="#sofa-2-obj" mtl="#sofa-2-mtl"  scale="3 3 3"  rotation="0 -180 0"></a-obj-model>
+				<a-obj-model src="#table-3-obj" mtl="#table-3-mtl"  scale="2 2 2" ></a-obj-model>
+				<a-obj-model src="#tv-obj" mtl="#tv-mtl"  scale="0.5 0.5 0.5"  rotation="-90 180 0"></a-obj-model>
+				<a-obj-model src="#tv-obj" mtl="#tv-mtl"  scale="0.5 0.5 0.5"  rotation="-90 180 0"></a-obj-model>
+    		-->
+			<a-obj-model src="#sofa-obj" mtl="#sofa-mtl"  scale="3 3 3" rotation="0 -180 0"></a-obj-model>
 	    </a-marker>
 	    <a-marker preset='kanji'>
 			<a-entity scale="0.005 0.005 0.005" gltf-model="#myShoeModel"></a-entity>
